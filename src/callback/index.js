@@ -7,3 +7,18 @@ function calc (v1, v2, callback){
 }
 
 console.log(calc(6,2,sum))
+
+
+function date(cb){
+    console.log(new Date())
+    setTimeout( function () {
+        let date = new Date()
+        callback(cb)
+    },3000)
+}
+
+function cb(dateNow){
+    console.log(dateNow)
+}
+
+date(cb)
